@@ -67,7 +67,25 @@ let pesos = pets.map(x => x.peso)//Criando um vetor apenas com os pesos dos pets
 console.log(pesos)
 console.log(pesos.reduce((acum, val) => acum + val))
 
+//Fazendo tudo em um linha só 
 console.log(pets.map(x=>x.peso).reduce((acum,val)=>acum+val))
+
+//Calculando o peso médio
+console.log(pets.map(x=>x.peso).reduce((acum,val)=>acum + val / pets.length))
+
+// includes () => retorna true caso exista um elemento no vetor, igual o parâmetro passado.
+console.log(numeros.includes(4))// true
+console.log(numeros.includes(10))// false
+
+console.log(pets.includes('Gato')) // False
+
+//Diferença entre includes() e some()
+//Includes() -> Procura um valor dentro de um vetor de valores simples
+//some() -> procura por um critério, passado via arrow function, em um vetor simples
+
+
+
+
 
 
 
