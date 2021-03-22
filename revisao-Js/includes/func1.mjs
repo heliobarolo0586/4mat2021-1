@@ -1,10 +1,10 @@
-function somaVet(vet){
+export function somaVet(vet){
     let soma = 0
     for(let n of vet)soma += n
     return soma     
 }
 
-function quadradoVet(vet){
+export function quadradoVet(vet){
     //Cria  um novo vetor cujo os elementos equivalem
     //aos elementos do vetor original elevados ao quadrado
     let res = []
